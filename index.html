@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventurOn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- =========  navbar ========== -->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="navlink">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="ctn"><a href="#">Explore</a></li>
+        </ul>
+        <img class='menu-btn' src="./img/menu.png" alt="menu">
+    </nav>
+
+    <!-- =========== first page ================ -->
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colourful World</h2>
+            <div class="line"></div>
+            <h1>A Wonderful Gift</h1>
+            <a href="#" class="ctn">learn more</a>
+        </div>
+    </header>
+
+    <!-- ============ second page ========== -->
+    <section class="events">
+        <div class="title">
+            <h1>UPCOMING EVENTS</h1>
+            <DIv class="line"></DIv>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/1.jpg" alt="">
+                <h4>Everest Camp Track</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicisimus. Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Repudiandae eaque ut, similique cumque totam omnis nemo atque provident quidem
+                    vel, ex exercitationem commodi.</p>
+            </div>
+            <div class="col">
+                <img src="./img/2.jpg" alt="">
+                <h4>KedarKanth Camp Track</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicinimus. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ea quod excepturi voluptate autem? Quo delectus optio tempore veniam molestiae
+                    deserunt aspernatur vitae sunt!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== third page ============= -->
+    <div class="explore">
+        <div class="discription">
+            <h1 class="desc">EXPLORE THE WORLD</h1>
+            <div class="third-page-line"></div>
+            <P class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita vel nemo dolorum
+                repudiandae voluptatum quod iure excepturi itaque dolor! Lorem ipsum dolor sit ritatis veniam rerum qui
+                aut eos eligendi sapiente impedit ipsa omnis autem natus, repellendus quis expedita.</P>
+        </div>
+    </div>
+
+    <!-- ========= fourth page =========== -->
+
+    <div class="tours-destinations">
+        <div class="first-section">
+            <h1 class="heading"> UPCOMING TOUR & DESTINATION</h1>
+            <DIV class="line-forth"></DIV>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolores natus, mollitia nisi
+                hic dolore deleniti animi pariatur laborum perferendis?</p>
+        </div>
+        <div class="second-section">
+            <div class="img-1">
+                <div><img src="./img/1.jpg" alt=""></div>
+                <div><img src="./img/2.jpg" alt=""></div>
+            </div>
+            <div class="img-2">
+                <div><img src="./img/3.jpg" alt=""></div>
+                <div><img src="./img/4.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <pre>Copyright 1999-2022 by Refsnes Data. All Rights Reserved.
+ Adventure is Powered by niranjan.co.</pre>
+
+    </div>
+    <script>
+        let menubtn = document.querySelector('.menu-btn')
+        let navlink = document.querySelector('.navlink')
+        menubtn.addEventListener('click', () => {
+            navlink.classList.toggle('mobile-menu')
+            console.log('clicked')
+        })
+    </script>
+</body>
+
+</html>
