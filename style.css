@@ -9,6 +9,9 @@ body,
 html {
     overflow-x: hidden;
 }
+.fonts{
+    font-family: 'Ubuntu', sans-serif;
+}
 
 /* ============ navbnar =========== */
 .navbar {
@@ -21,6 +24,7 @@ html {
     padding: 18px;
     color: whitesmoke;
     background-image: url(./img/4.jpg);
+   
 }
 
 .navlink {
@@ -48,6 +52,7 @@ html {
 
 .logo {
     margin-top: 5px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* ===============first page==================== */
@@ -113,11 +118,14 @@ a {
 }
 
 /* ============= second page================== */
-section {
-    width: 90%;
-    margin: 80px;
+/* section { */
+    /* width: 100%; */
+    /* margin: 80px 0px 50px 0px ; */
+/* } */
+.events{
+    width: 100%;
+    margin: 20px 10px 20px 10px;
 }
-
 .title {
     text-align: center;
     font-size: 4vmin;
@@ -136,12 +144,13 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
 
 }
 
 .row .col img {
-    width: 80vmin;
-    height: 60vmin;
+    max-width: 50%;
+    max-height: 40%;
 }
 
 .events .row {
@@ -151,18 +160,19 @@ section {
 h4 {
     font-size: 6vmin;
     margin-top: 12px;
+    padding: 2px 53px;
 
 }
 
-p {
-    padding: 5px 10px;
+.col p {
+    padding: 5px 50px;
     margin-bottom: 11px;
 }
 
 /* =============== third page============= */
 .explore {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     color: whitesmoke;
     background-image: url('./img/3.jpg');
     background-size: cover;
@@ -174,15 +184,16 @@ p {
 }
 
 .discription h1 {
-    width: 50%;
+   
     padding: 10px;
     font-size: 6vmin;
 }
 
 .discription p {
-    width: 30%;
+    max-width: 75%;
     margin-top: 20px;
     margin-bottom: 12px;
+    margin-left: -3px;
 }
 
 .third-page-line {
@@ -194,20 +205,25 @@ p {
 /*  ================= fourth page================ */
 .tours-destinations {
     display: flex;
-    height: 80vh;
+    /* height: 80vh; */
     margin-top: 40px;
 
 }
 
 .first-section {
     width: 40%;
-    margin: 100px 100px;
+    margin: 70px 25px;
 }
-
+.first-section p{
+    margin-bottom: 13px;
+}
 .second-section {
-    width: 60%;
-    margin: 67px 0px 0px 90px;
+    /* margin: 67px 0px 0px 90px; */
     display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .img-1 img {
@@ -249,8 +265,7 @@ p {
 .footer {
     background-color: rgb(102 96 157);
     width: 100vw;
-    height: 20px;
-    height: 10vmin;
+    height: 10vh;
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -308,37 +323,46 @@ p {
 
     .discription p {
         width: 90%;
+        max-width: 100%;
+        margin-left: 0px;
 
     }
 
     section {
-        margin: 22px;
+        margin-top: 22px;
     }
 
     h4 {
         margin-top: 20px;
     }
 
-    p {
+    /* p {
         margin-top: 12px;
         text-align: justify;
-    }
+    } */
 
     .events .row {
         display: flex;
         flex-direction: column;
         margin-top: 5px;
     }
-
+    .events {
+        
+        margin: 24px 0px 19px 0px;
+    }
     .row .col {
         margin-top: 36px;
+        width: 100%;
     }
 
     .discription h1 {
         width: 116%;
+        padding:0px 0px 10px 0px;
 
     }
-
+    .first-section p {
+        margin-bottom: 20px;
+    }
     .first-section {
         width: 76%;
         margin: 53px 41px 8px 39px;
@@ -352,7 +376,7 @@ p {
     .second-section {
         display: flex;
         flex-direction: column;
-        margin: 50px 0px 0px 31px;
+        margin-top: 20px;
     }
 
     .tours-destinations {
@@ -360,10 +384,10 @@ p {
 
     }
 
-    img {
-        width: 20px;
+    .row .col img {
+        max-width: 340px;
+        max-height: 267px;
     }
-
     .img-1 img {
         margin-left: 6px;
         margin-top: -10px;
@@ -385,11 +409,10 @@ p {
     }
 }
 
-@media only screen and (max-width:850px) and (min-width:650px) {
+@media only screen and (max-width:850px) and (min-width:650p){
     section {
         margin: 21px 40px;
     }
-
     .row {
         flex-direction: column;
     }
@@ -405,9 +428,13 @@ p {
     .second-section {
         margin: 37px 61px;
     }
-
+    /* .discription p {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 12px;
+    } */
     .tours-destinations {
-        height: 74vh;
+        /* height: 74vh; =>middle me height fix nhi krna hai warana overflow krne lgega*/  
         display: flex;
         flex-direction: column;
     }
